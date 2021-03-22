@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-g",
-                "${file}",
+                "${fileDirname}\\*.c",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
