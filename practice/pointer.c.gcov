@@ -1,0 +1,25 @@
+        -:    0:Source:pointer.c
+        -:    0:Graph:pointer.gcno
+        -:    0:Data:pointer.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        1:    2:void main(){
+        -:    3:    int a, b, c, d, *ap, *bp;
+        1:    4:    printf("Enter two numbers");
+        1:    5:    scanf("%d %d", &a, &b);
+        1:    6:    ap=&a;
+        1:    7:    bp=&b;
+        1:    8:    c=a+b;
+        1:    9:    d=*ap+*bp;
+        1:   10:    printf("\nSum without pointer: %d", c);
+        1:   11:    printf("\nSum without pointer: %d", d);
+        -:   12:
+        -:   13:// Void pointer
+        -:   14:    int f;
+        1:   15:    void *pt=&f;
+        1:   16:    *(int *)pt=12;
+        1:   17:    printf("\nvalue in void pointer is: %d", *(int *)pt);
+        -:   18:
+        -:   19:
+        1:   20:}
