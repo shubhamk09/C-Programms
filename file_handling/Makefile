@@ -3,17 +3,17 @@
 #<Tab>Command
 PROJECT_NAME=filehandling
 
-INC= -Iinc /
--Isrc
+INC= inc
+SSRC=src
 
-SRC=main.c /
+SRC=main.c \
 src/fun.c
 
 # TEST_SRC=test_complex.c\
 # unity.c
 
 $(PROJECT_NAME):$(SRC) $(INC)
-	gcc $(INC) $(SRC) -o $(PROJECT_NAME).out
+	gcc -I$(INC) -I$(SSRC) $(SRC) -o $(PROJECT_NAME).out
 
 run:$(PROJECT_NAME)
 	./$(PROJECT_NAME).out
