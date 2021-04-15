@@ -24,12 +24,13 @@ fprintf(fp,"%s, %s, %s\n",name, email, gitlink);
 char text[50];
 rewind(fp);
 int i=0;
+
+//It will print first line only
 if(fgets(text, 50, fp)!=NULL){
 while(text[i]!='\0'){
     putchar(text[i]);
     i++;
 }
 }
-
 fclose(fp);
 }

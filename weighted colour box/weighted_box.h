@@ -20,5 +20,6 @@ typedef struct box
 void add_box(wbox *ptr, int num);
 void print_box(wbox *ptr, int num);
 void add_single(wbox *ptr, int *count);
+wbox* find_box(wbox *ptr, int num, int id);
 
 #endif
